@@ -1,0 +1,219 @@
+.profile{
+  z-index: 5;
+  width: 100%;
+  height: 100vh;
+  margin: 0px auto;
+}
+.all-profile{
+  width: 100%;
+  height: 100vh;
+
+}
+.profile-card{
+    width: 100%;
+    border-radius: 30px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    max-width: 100%;
+    min-height: 480px;
+    margin: 2.2rem auto ;
+    animation: fadeIn 1s ease forwards;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.profile-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* Adjust the width as needed */
+    height: 2px;
+    background-color: #2196f3; /* Blue color */
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+.profile-card .user-photo{
+   width: 100%;
+   height: 130px;
+position: relative;
+}
+.profile-card .user-photo img{
+    position: absolute;
+    width: 10rem;
+    height: 9rem;
+    background-color: white;
+    border-radius: 50%;
+    top: -28px;
+    z-index: 10;
+    left: calc(50% - 5rem) ;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    animation: zoomIn 0.8s ease forwards;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.styled-form {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .left-section,
+  .right-section {
+    flex: 1;
+    padding: 0 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.2rem;
+    font-weight: bold;
+
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1.6px solid #512da8; 
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    outline: none;
+    border-color: #ff4081; 
+    transform: scale(1.02); 
+  }
+  
+  .left-section .form-group:nth-child(even) {
+    animation: slideInLeft 0.8s ease;
+  }
+  
+  .right-section .form-group:nth-child(even) {
+    animation: slideInRight 0.8s ease;
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .left-section .form-group:nth-child(odd) {
+    animation: slideInLeft 0.8s ease;
+  }
+  
+  .right-section .form-group:nth-child(odd) {
+    animation: slideInRight 0.8s ease;
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .left-section label {
+    animation: slideLeft 0.8s ease;
+  }
+  
+  @keyframes slideLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+  
+  .right-section label {
+    animation: slideright 0.8s ease;
+  }
+  
+  @keyframes slideright {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+  
+
+
+
+
